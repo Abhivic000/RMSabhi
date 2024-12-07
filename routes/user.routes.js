@@ -3,8 +3,8 @@ const { getSeatAvailability, bookSeat, getBookingDetails } = require('../control
 const { authenticateToken } = require('../middleware/auth.middleware');
 
 const router = express.Router();
-router.post('/seat-availability', authenticateToken, getSeatAvailability);
-router.post('/book-seat', authenticateToken, bookSeat);
-router.get('/booking-details', authenticateToken, getBookingDetails);
+router.post('/seat_availability', authenticateToken, getSeatAvailability);
+router.post('/book_seat', authenticateToken, bookSeat);
+router.get('/booking_details', authenticateToken, getBookingDetails);
 
 module.exports = router;
